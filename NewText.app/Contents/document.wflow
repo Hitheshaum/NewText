@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>381</string>
+	<key>AMApplicationVersion</key>
+	<string>2.4</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	tell application "Finder"		set currentPath to insertion location as text		set pPath to POSIX path of currentPath	end tell	return pPathend run</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>FC945A17-327F-4209-9B57-CFD3B2E2FA92</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>BCFE0E01-EAC0-4DCB-BAB8-4B9CFCC1ADCA</string>
+				<key>UUID</key>
+				<string>E4E1F406-5313-45EA-8549-40310A853628</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>394.000000:1527.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>v.1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>variableUUID</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<false/>
+						<key>selectedVariableUUID</key>
+						<string>9BCDBC38-AA23-4F26-A494-19A4AB03C7F5</string>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Set Value of Variable.action</string>
+				<key>ActionName</key>
+				<string>Set Value of Variable</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>variableUUID</key>
+					<string>9BCDBC38-AA23-4F26-A494-19A4AB03C7F5</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Set_Value_of_Variable</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>Set_Value_of_Variable</string>
+				<key>InputUUID</key>
+				<string>03AD44CD-9907-498B-A951-8CD8C0E6AD02</string>
+				<key>Keywords</key>
+				<array>
+					<string>variable</string>
+					<string>binding</string>
+					<string>input</string>
+					<string>output</string>
+					<string>storage</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>8DF85388-F055-452B-A331-8861B77B00EE</string>
+				<key>UUID</key>
+				<string>72F0EDDD-C8F4-40D9-B3BC-22F54861BDFE</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>variableUUID</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>394.000000:1214.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	display dialog "Save as:" default answer "untitled.txt"	set firstInputText to text returned of result	set exceptionList to {""}	repeat		if exceptionList contains firstInputText or findFirst(firstInputText, ".") is equal to 1 then			display dialog "Save as:" default answer firstInputText			set firstInputText to text returned of result		else			exit repeat		end if	end repeat	copy firstInputText to inputText	set extension to rightStringFromRight(inputText, ".")	set lsfr to leftStringFromRight(inputText, ".")	tell application "Finder"		set currentPath to insertion location as text		set x to POSIX path of currentPath				if extension is equal to "txt" then			set tempName to lsfr		else			set tempName to inputText		end if		if exists x &amp; tempName &amp; ".txt" as POSIX file then			set i to 2			repeat				set newName to (tempName &amp; "(" &amp; (i as string) &amp; ")")				if exists x &amp; newName &amp; ".txt" as POSIX file then					set i to i + 1				else					exit repeat				end if			end repeat			copy newName to finalName		else			copy tempName to finalName		end if			end tell	return finalNameend run(* below code is obtained from http://applescript.bratis-lover.net/library/string*)on leftStringFromRight(str, del)	local str, del, oldTIDs	set oldTIDs to AppleScript's text item delimiters	try		set str to str as string		if str does not contain del then return str		set AppleScript's text item delimiters to del		set str to str's text items 1 thru -2 as string		set AppleScript's text item delimiters to oldTIDs		return str	on error eMsg number eNum		set AppleScript's text item delimiters to oldTIDs		error "Can't leftStringFromRight: " &amp; eMsg number eNum	end tryend leftStringFromRighton rightStringFromRight(str, del)	local str, del, oldTIDs	set oldTIDs to AppleScript's text item delimiters	try		set str to str as string		if str does not contain del then return str		set AppleScript's text item delimiters to del		set str to str's last text item		set AppleScript's text item delimiters to oldTIDs		return str	on error eMsg number eNum		set AppleScript's text item delimiters to oldTIDs		error "Can't rightStringFromRight: " &amp; eMsg number eNum	end tryend rightStringFromRighton findFirst(str, findString)	local str, findString, len, oldTIDs	set oldTIDs to AppleScript's text item delimiters	try		set str to str as string		set AppleScript's text item delimiters to findString		considering case			set len to str's first text item's length		end considering		set AppleScript's text item delimiters to oldTIDs		if len is str's length then			return 0		else			return len + 1		end if	on error eMsg number eNum		set AppleScript's text item delimiters to oldTIDs		error "Can't findFirst: " &amp; eMsg number eNum	end tryend findFirst</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>285B51A4-6EA9-435A-B41B-817F9948F6B8</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>78295E0F-4FF1-4E1A-96DA-0FDE821AC4D5</string>
+				<key>UUID</key>
+				<string>B61B0B13-9084-42E9-81FA-C20E32B282B3</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>394.000000:1110.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>v.1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>variableUUID</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<false/>
+						<key>selectedVariableUUID</key>
+						<string>809F0490-335B-43BB-8290-835026071290</string>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Set Value of Variable.action</string>
+				<key>ActionName</key>
+				<string>Set Value of Variable</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>variableUUID</key>
+					<string>809F0490-335B-43BB-8290-835026071290</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Set_Value_of_Variable</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>Set_Value_of_Variable</string>
+				<key>InputUUID</key>
+				<string>87B9AFCC-FD2E-4A46-9AD9-6D467DB7DBA1</string>
+				<key>Keywords</key>
+				<array>
+					<string>variable</string>
+					<string>binding</string>
+					<string>input</string>
+					<string>output</string>
+					<string>storage</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>C529FA7F-4C0E-4AC9-826C-12A1F0764E8A</string>
+				<key>UUID</key>
+				<string>B8EE45D9-2FF1-4541-A57C-5DAE23A57FA8</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>variableUUID</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>394.000000:797.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	return ""end run</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>CA858C8B-9C2D-4616-8502-00B832581157</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>FC430D86-7208-4E2C-AA9B-2A69BECF3A33</string>
+				<key>UUID</key>
+				<string>5DA32A40-B8AA-4A55-B8AF-30C1D0FDC2AB</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>394.000000:693.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+						<string>com.apple.cocoa.attributed-string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>v.2.2.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+					<string>TextEdit</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>checkedForDefaultEncoding</key>
+					<dict/>
+					<key>newFileFolderPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>selectedVariableUUID</key>
+						<string>9BCDBC38-AA23-4F26-A494-19A4AB03C7F5</string>
+						<key>variableUUIDsInMenu</key>
+						<array>
+							<string>9BCDBC38-AA23-4F26-A494-19A4AB03C7F5</string>
+						</array>
+					</dict>
+					<key>newFileName</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>$(809F0490-335B-43BB-8290-835026071290)</string>
+						</array>
+					</dict>
+					<key>newFileTextEncoding</key>
+					<dict/>
+					<key>replaceExistingFiles</key>
+					<dict/>
+					<key>textFormat</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/New Text File.action</string>
+				<key>ActionName</key>
+				<string>New Text File</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>checkedForDefaultEncoding</key>
+					<true/>
+					<key>newFileFolderPath</key>
+					<string></string>
+					<key>newFileName</key>
+					<string>$(809F0490-335B-43BB-8290-835026071290)</string>
+					<key>newFileTextEncoding</key>
+					<integer>4</integer>
+					<key>replaceExistingFiles</key>
+					<false/>
+					<key>textFormat</key>
+					<integer>1</integer>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.NewTextFile</string>
+				<key>CFBundleVersion</key>
+				<string>2.2.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryText</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMNewTextFileAction</string>
+				<key>InputUUID</key>
+				<string>464F2145-2663-4ED8-ABC9-A542EFCE862A</string>
+				<key>Keywords</key>
+				<array>
+					<string>Create</string>
+					<string>Make</string>
+					<string>File</string>
+					<string>Text</string>
+					<string>Save</string>
+					<string>New</string>
+					<string>Document</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>F1D3A0A6-3A73-4BD1-9E2D-279E50E31A05</string>
+				<key>SelectedShowWhenRunItemNames</key>
+				<array/>
+				<key>ShowOnlySelectedItemsWhenRun</key>
+				<true/>
+				<key>ShowWhenRun</key>
+				<false/>
+				<key>UUID</key>
+				<string>B7BA867F-E16E-4946-8244-3452F2E3A2CC</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>newFileTextEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>replaceExistingFiles</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Desktop</string>
+						<key>name</key>
+						<string>newFileFolderPath</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>checkedForDefaultEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>Untitled.txt</string>
+						<key>name</key>
+						<string>newFileName</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+					<key>5</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>textFormat</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>5</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>394.000000:380.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/New Text File.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>4E44B66E-5D7F-4E76-BB90-C4323FA6FAEC</key>
+		<dict>
+			<key>from</key>
+			<string>B61B0B13-9084-42E9-81FA-C20E32B282B3 - B61B0B13-9084-42E9-81FA-C20E32B282B3</string>
+			<key>to</key>
+			<string>B8EE45D9-2FF1-4541-A57C-5DAE23A57FA8 - B8EE45D9-2FF1-4541-A57C-5DAE23A57FA8</string>
+		</dict>
+		<key>93FF8961-10F1-4F77-B1E1-61EBA8226FDA</key>
+		<dict>
+			<key>from</key>
+			<string>5DA32A40-B8AA-4A55-B8AF-30C1D0FDC2AB - 5DA32A40-B8AA-4A55-B8AF-30C1D0FDC2AB</string>
+			<key>to</key>
+			<string>B7BA867F-E16E-4946-8244-3452F2E3A2CC - B7BA867F-E16E-4946-8244-3452F2E3A2CC</string>
+		</dict>
+		<key>A335EAD8-6BDE-4113-88B6-88E5DAE5D09F</key>
+		<dict>
+			<key>from</key>
+			<string>B8EE45D9-2FF1-4541-A57C-5DAE23A57FA8 - B8EE45D9-2FF1-4541-A57C-5DAE23A57FA8</string>
+			<key>to</key>
+			<string>5DA32A40-B8AA-4A55-B8AF-30C1D0FDC2AB - 5DA32A40-B8AA-4A55-B8AF-30C1D0FDC2AB</string>
+		</dict>
+		<key>E87A7990-A9F0-4B74-A963-7ED3BE229175</key>
+		<dict>
+			<key>from</key>
+			<string>E4E1F406-5313-45EA-8549-40310A853628 - E4E1F406-5313-45EA-8549-40310A853628</string>
+			<key>to</key>
+			<string>72F0EDDD-C8F4-40D9-B3BC-22F54861BDFE - 72F0EDDD-C8F4-40D9-B3BC-22F54861BDFE</string>
+		</dict>
+		<key>FEFCD293-EC4C-44ED-835E-77F0B1F6EE08</key>
+		<dict>
+			<key>from</key>
+			<string>72F0EDDD-C8F4-40D9-B3BC-22F54861BDFE - 72F0EDDD-C8F4-40D9-B3BC-22F54861BDFE</string>
+			<key>to</key>
+			<string>B61B0B13-9084-42E9-81FA-C20E32B282B3 - B61B0B13-9084-42E9-81FA-C20E32B282B3</string>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>9BCDBC38-AA23-4F26-A494-19A4AB03C7F5</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>CurrentFolder</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>809F0490-335B-43BB-8290-835026071290</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>fileName</string>
+		</dict>
+	</array>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.application</string>
+	</dict>
+</dict>
+</plist>
